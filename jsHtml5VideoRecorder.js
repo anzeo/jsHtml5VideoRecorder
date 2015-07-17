@@ -273,7 +273,9 @@ jsHtml5VideoRecorder.prototype = {
         
         if (this.showStreamOnFinish) {
             this.showHideStream('show');
-        }         
+        } else {
+            this.showHideStream('hide');
+        }
         
         //Empty frames for next video capture
         this.frames = [];
